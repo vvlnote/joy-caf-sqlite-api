@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  unit_cost: 1.5
+  used_amount: 1.5
+  available_amount: 1.5
+  low_amount_alert: 1.5
+  alert: false
+
+two:
+  name: MyString
+  unit_cost: 1.5
+  used_amount: 1.5
+  available_amount: 1.5
+  low_amount_alert: 1.5
+  alert: false
