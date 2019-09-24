@@ -1,14 +1,15 @@
 class DishIngredientsController < ApplicationController
-  before_action :set_dish_ingredient, only: [:show, :update, :destroy]
+  before_action :set_dish
+  # before_action :set_dish_ingredient, only: [:show, :update, :destroy]
 
   # GET /dish_ingredients
   def index
-    @dish_ingredients = DishIngredient.all
+    @ingredients = @dish.ingredients
 
-    render json: @dish_ingredients
+    render json: @ingredients
   end
 
-  # GET /dish_ingredients/1
+  # GET /dish/1/ingredients
   def show
     render json: @dish_ingredient
   end
@@ -39,6 +40,11 @@ class DishIngredientsController < ApplicationController
   end
 
   private
+
+    def set_dish
+      @dish = Dish.find(params[:dish_id])
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_dish_ingredient
       @dish_ingredient = DishIngredient.find(params[:id])

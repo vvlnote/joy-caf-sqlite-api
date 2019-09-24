@@ -16,7 +16,7 @@ dishes = Dish.create([{name: 'Shredded Cabbage', price: 14.00, total_orders: 0},
 	{name: 'Stir Fry Pork with Green Bell Pepper', price: 13.29, total_orders: 0 }, 
 	{name: 'Fried Spicy Chicken', price: 18.00, total_orders: 0},
 	{name: 'Stir Fry Spicy Shrimp', price: 19.50, total_orders: 0}, 
-	{name: 'Rice', price: 2.00} ])
+	{name: 'Rice', price: 2.00, total_orders: 0} ])
 
 
 
