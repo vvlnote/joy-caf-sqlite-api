@@ -26,6 +26,7 @@ class IngredientsController < ApplicationController
 
   # PATCH/PUT /ingredients/1
   def update
+
     if @ingredient.update(ingredient_params)
       render json: @ingredient
     else
